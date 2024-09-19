@@ -1,0 +1,71 @@
+.contenedor{/*padre en en padre utilizamos propiedades de grid templete */
+    background-color: aquamarine;
+    padding: 10px;
+    font-size: 23px;
+    text-align: center;
+    display: grid;
+    grid-gap:10px;
+    grid-template-columns: 2fr 2fr  2fr 2fr 3fr;
+    grid-template-rows: 1fr 1fr 5fr 1fr ;
+    grid-template-areas:"header header header header header"
+                        "nav    nav    nav nav nav"
+                        "cont1 cont1 cont2 cont2  ads"  
+                        "foter foter foter foter foter";
+}
+.contenedor .header{
+    background-color: blueviolet;
+    grid-column: header;
+}
+.contenedor .nav{
+    background-color: chartreuse;
+    grid-column: nav;
+}
+.contenedor .section{
+    background-color: rgb(233, 230, 228);
+    grid-column: section;
+}
+.cont1{
+    background-color: rgb(147, 110, 64);
+    grid-column: cont1;
+
+}
+.cont2{
+    background-color: coral;
+    grid-column: cont2;
+
+}
+/*.section{
+    display: flex;
+
+}
+.cont{
+    width: 455px;
+    height: 300px;
+    background-color:rgb(230, 227, 224);
+    margin:5px;
+}
+    */
+.contenedor .ads{
+    background-color: brown;
+    grid-column: ads;
+   
+}
+
+.hijo1{
+    background-color: blanchedalmond;
+    margin: 20px;
+    border-radius: 10px;
+    height: 120px;
+    
+}
+.hijo2{
+    background-color: bisque;
+    margin: 20px;
+    height:120px;
+    border-radius: 10px;
+}
+
+.contenedor .foter{
+    background-color: cornflowerblue;
+    grid-column: foter;
+}
